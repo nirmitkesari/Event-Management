@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* background-color: #f4f4f4; */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/home1.avif') no-repeat center center/cover;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/* Section Spacing */
+.services-section, .service-details, .security-section, .data-confidentiality, .work-monitoring, .cta-section {
+    margin: 50px auto;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover; */
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p, ul {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Service Section Hero */
+.services-hero {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('contact-hero.jpg') center/cover;
+    color: #fff;
+    padding: 40px 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+.services-hero h1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.services-hero p {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') center/cover; */
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Event Types Grid */
+.event-types-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.event-type-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.event-type-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-type-item p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 60px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* CTA Section */
+.services-cta, .cta-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Additional Sections */
+.service-details ul, .security-section ul, .data-confidentiality ul, .work-monitoring ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service-details li, .security-section li, .data-confidentiality li, .work-monitoring li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    .team-members {
+        flex-direction: column;
+    }
+
+    .event-types-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
